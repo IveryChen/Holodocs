@@ -1,0 +1,62 @@
+.. Holoscreen documentation master file, created by
+   sphinx-quickstart on Mon Apr 24 18:44:59 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Holoscreen's documentation!
+======================================
+Overview:
+
+Matrix.js, viewTransform.js, anamorphicStretching.js do not need to be touched.
+
+BackgroundElements.js creates the background elements but do not have any methods.
+
+htmlcss.js and uiControls.js go hands in hand; htmlcss.js is the html and css written as a javascript file. Whenever a new html element such as a toggle has to be added, I add it in this file. 
+
+When a new toggle for example is added, you would need to go to uiControls.js and add functionalities of the toggle there. In addition, you need to add calls to methods inside uiControls.js inside the index.html.
+
+Ducky.js is the main file where the model, background and scene are initialised and the model rotate is controlled.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :name: 
+
+Ducky.js:
+
+.. js:autofunction:: dynamicallyLoadScript
+.. js:autofunction:: dynamicallyLoadCss
+.. js:autofunction:: handleOrientation
+.. js:autofunction:: initProgram
+.. js:autofunction:: initModel
+.. js:autofunction:: animate
+.. js:autofunction:: toDegrees
+.. js:autofunction:: toRadians
+
+
+uiControls.js:
+
+.. js:autofunction:: onPermissionRequestClick
+.. js:autofunction:: setEnvironmentElements
+.. js:autofunction:: setPortalElements
+.. js:autofunction:: setGridElements
+
+anamorphicStretching.js:
+.. js:autofunction:: initializeStretchingValues
+.. js:autofunction:: updateDistortion
+.. js:autofunction:: initializeCoordinates
+.. js:autofunction:: getMData
+.. js:autofunction:: getInsectWithScreen
+
+viewTransform.js:
+.. js:autofunction:: getTransform
+.. js:autofunction:: applyTransform
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
